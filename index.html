@@ -6,44 +6,74 @@
 </head>
 
 <body>
-    <h1 id="title"> WANT TO BECOME A SUPERHERO? </h1>
+    <h1 id="title">Which Superhero Are You?</h1>
     <p id="description">Do you dream of flying through the skies, helping people, and fighting bad guys? This is your
         chance to show us you’ve got what it takes to be a superhero. Fill out the form and tell us about your powers,
         your superhero name, and why you’re ready to save the day. Let’s see if you’re ready to join the heroes!</p>
 </body>
 
 <form id="survey-form">
-    <label id="name-label" for="name">Enter your name </label>
-    <input id="name" name="name" type="text" placeholder="Hulk" required />
-    <label id="email-label" for="email">Enter your email </label>
-    <input id="email" name="email" type="email" placeholder="hulk@superhero.com" required />
-    <label id="number-label" for="number">Enter your age </label>
-    <input id="number" name="number" type="number" min="0" max="100" placeholder="10" />
+    <label id="name-label" for="name"> What would your superhero name be? </label>
+    <input id="name" name="name" type="text" placeholder="Your heroic alias" required />
+    <label id="email-label" for="email"> Where can we send your superhero missions? </label>
+    <input id="email" name="email" type="email" placeholder="Your email address" required />
+    <label id="number-label" for="number"> How many years have you been saving the world? </label>
+    <input id="number" name="number" type="number" min="1" max="1000" placeholder="Your age in superhero years" />
 
-    <label for"dropdown">What is your superpower?</label>
+    <label for="dropdown">What’s your superhero headquarters?</label>
 
-    <select id="dropdown" name="powers">
-        <option value="fire"> Breathing Fire</option>
-        <option value="stone"> Converting anything to Stone</option>
+    <select id="dropdown" name="headquarters">
+        <option value="batcave"> Batcave</option>
+        <option value="stark-tower"> Stark Tower</option>
+        <option value="saturn"> Saturn</option>
+        <option value="x-mansion"> X-Mansion</option>
+        <option value="mars"> Mars</option>
+        <option value="other"> Other</option>
     </select>
 
     <fieldset>
-        <legend>Where were you born?</legend>
-        <input type="radio" id="earth" name="birthplace" value="earth" />
-        <label for="earth">Earth</label>
+        <legend>What’s your preferred mode of transportation?</legend>
+        <input type="radio" id="flying" name="transportation" value="flying" />
+        <label for="flying">Flying</label>
 
-        <input type="radio" id="space" name="birthplace" value="space" />
-        <label for="space">Space</label>
+        <input type="radio" id="teleportation" name="transportation" value="teleportation" />
+        <label for="teleportation">Teleportation</label>
+
+        <input type="radio" id="super-speed" name="transportation" value="super-speed" />
+        <label for="super-speed">Super Speed</label>
+
+        <input type="radio" id="gadgets" name="transportation" value="gadgets" />
+        <label for="gadgets">Gadgets</label>
+
+        <input type="radio" id="swinging" name="transportation" value="swinging" />
+        <label for="swinging">Swinging</label>
     </fieldset>
 
     <fieldset>
-        <legend>What are your favourite colors?</legend>
-        <input type="checkbox" name="color" value="red">Red
-        <input type="checkbox" name="color" value="blue">Blue
-        <input type="checkbox" name="color" value="green">Green
+        <legend>What are your superhero powers?</legend>
+        <input type="checkbox" name="power" id="super-strength" value="super-strength">
+        <label for="super-strength">Super Strength</label>
+
+        <input type="checkbox" name="power" id="invisibility" value="invisibility">
+        <label for="invisibility">Invisibility</label>
+
+        <input type="checkbox" name="power" id="telepathy" value="telepathy">
+        <label for="telepathy">Telepathy</label>
+
+        <input type="checkbox" name="power" id="time-travel" value="time-travel">
+        <label for="time-travel">Time Travel</label>
+
+        <input type="checkbox" name="power" id="speed" value="speed">
+        <label for="speed">Speed</label>
+
+        <input type="checkbox" name="power" id="super-healing" value="super-healing">
+        <label for="super-healing">Super Healing</label>
+
     </fieldset>
 
-    <textarea type="textarea" id="comments" name="comments"></textarea>
+    <label for="heroic-adventures">Tell us about your last heroic adventure!</label>
+    <textarea type="textarea" id="heroic-adventures" name="heroic-adventures"></textarea>
+    
 
     <button id="submit" type="submit">Submit</button>
 </form>
